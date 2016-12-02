@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "extends": "eslint-config-ksmithut/es6-node",
+  "rules": {
+
+  }
+}
