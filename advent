@@ -18,6 +18,7 @@ const NOT_CHECKED = chalk.cyan('-')
 
 program
   .usage('[options] <days...>')
+  .option('-e, --examples', 'run the examples')
 
 program
   .command('reset')
@@ -44,7 +45,6 @@ program
 
 program
   .command('run [days...]')
-  .option('-e, --examples', 'run the examples')
   .action((days) => {
     days = days
       .map((file) => file.replace(/[^\d]/g, ''))
