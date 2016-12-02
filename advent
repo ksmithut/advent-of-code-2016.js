@@ -46,14 +46,13 @@ program
   .command('run [days...]')
   .option('-e, --examples', 'run the examples')
   .action((days) => {
+    days = days
+      .map((file) => file.replace(/[^\d]/g, ''))
+      .filter(Boolean)
     return Promise.resolve(days).mapSeries(runDay)
   })
 
 program.parse(process.argv)
-
-// Promise.resolve(program.args)
-//   .mapSeries(runDay)
-
 
 function runDay(rawDay) {
   return Promise
