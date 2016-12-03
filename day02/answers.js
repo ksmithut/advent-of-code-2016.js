@@ -1,15 +1,31 @@
 'use strict'
 
 exports.part1 = {
-  answer: null,
+  answer: '92435',
   examples: [
-    { input: '', value: null },
+    {
+      input: [
+        'ULL',
+        'RRDDD',
+        'LURDL',
+        'UUUUD'
+      ].join('\n'),
+      value: '1985',
+    },
   ]
 }
 
 exports.part2 = {
   answer: null,
   examples: [
-    { input: '', value: null },
+    {
+      input: [
+        'ULL',
+        'RRDDD',
+        'LURDL',
+        'UUUUD'
+      ].join('\n'),
+      value: '5DB3',
+    },
   ]
 }
