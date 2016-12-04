@@ -97,8 +97,6 @@ const tracker = () => {
   }
 }
 
-
-
 const getSteps = (prev, next, acc = []) => {
   let newPoint
   if (prev.x < next.x) newPoint = { x: prev.x + 1, y: prev.y }

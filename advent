@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+/* eslint-disable global-require, no-console, max-statements */
+
 'use strict'
 
 const path = require('path')
@@ -99,7 +101,8 @@ function runPart(part, mainInput, answers) {
 
       if (output === value) {
         console.log(` ${RIGHT} ${input} = ${value}`)
-      } else {
+      }
+      else {
         console.log(` ${WRONG} expected ${value}, given ${output}`)
       }
     })
@@ -110,7 +113,8 @@ function runPart(part, mainInput, answers) {
 
   if (typeof answer === 'undefined') {
     consoleOutput += NOT_CHECKED
-  } else {
+  }
+  else {
     consoleOutput += output === answer ? RIGHT : WRONG
   }
 

@@ -57,6 +57,7 @@ function part1(input) {
  * In your puzzle input, and instead reading by columns, how many of the listed
  * triangles are possible?
  */
+
 const parseVerticalTriads = (input) => {
   let buffer = []
   return input.split('\n').reduce((triangles, line, lineIndex) => {
