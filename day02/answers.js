@@ -8,24 +8,24 @@ exports.part1 = {
         'ULL',
         'RRDDD',
         'LURDL',
-        'UUUUD'
+        'UUUUD',
       ].join('\n'),
       value: '1985',
     },
-  ]
+  ],
 }
 
 exports.part2 = {
-  answer: null,
+  answer: 'C1A88',
   examples: [
     {
       input: [
         'ULL',
         'RRDDD',
         'LURDL',
-        'UUUUD'
+        'UUUUD',
       ].join('\n'),
       value: '5DB3',
     },
-  ]
+  ],
 }

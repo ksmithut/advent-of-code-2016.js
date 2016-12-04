@@ -61,7 +61,7 @@ function runDay(rawDay) {
       name: chalk.white(day),
       input: fs.readFileAsync(relative(day, 'input.txt'), 'utf8'),
       module: require(`./${day}`),
-      answers: require(`./${day}/answers`)
+      answers: require(`./${day}/answers`),
     }))
     .then((day) => {
       day.input = day.input.trim()
@@ -78,7 +78,9 @@ function runDay(rawDay) {
 function padLeft(string, length, char) {
   const diff = length - string.length
   if (diff <= 0) return string
-  return new Array(diff).fill(char).join('') + string
+  return new Array(diff)
+    .fill(char)
+    .join('') + string
 }
 
 function runPart(part, mainInput, answers) {
@@ -93,7 +95,7 @@ function runPart(part, mainInput, answers) {
       const value = example.value
       input = Array.isArray(input) ? input : [ input ]
 
-      const output = method.apply(null, input)
+      const output = method(...input)
 
       if (output === value) {
         console.log(` ${RIGHT} ${input} = ${value}`)
@@ -113,5 +115,5 @@ function runPart(part, mainInput, answers) {
   }
 
   console.log(consoleOutput)
-  console.log()
+  return console.log()
 }

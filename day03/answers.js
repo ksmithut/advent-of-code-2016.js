@@ -4,7 +4,7 @@ exports.part1 = {
   answer: 993,
   examples: [
     { input: ' 5  10  25 ', value: 0 },
-  ]
+  ],
 }
 
 exports.part2 = {
@@ -21,5 +21,5 @@ exports.part2 = {
       ].join('\n'),
       value: 6,
     },
-  ]
+  ],
 }

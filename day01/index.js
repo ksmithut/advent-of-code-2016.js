@@ -38,16 +38,16 @@
  */
 
 const NEXT_FACE = {
-  'N': { 'L': 'W', 'R': 'E' },
-  'E': { 'L': 'N', 'R': 'S' },
-  'S': { 'L': 'E', 'R': 'W' },
-  'W': { 'L': 'S', 'R': 'N' },
+  N: { L: 'W', R: 'E' },
+  E: { L: 'N', R: 'S' },
+  S: { L: 'E', R: 'W' },
+  W: { L: 'S', R: 'N' },
 }
 const NEXT_DISTANCE = {
-  'N': (pos, distance) => ({ y: pos.y - distance }),
-  'E': (pos, distance) => ({ x: pos.x + distance }),
-  'S': (pos, distance) => ({ y: pos.y + distance }),
-  'W': (pos, distance) => ({ x: pos.x - distance }),
+  N: (pos, distance) => ({ y: pos.y - distance }),
+  E: (pos, distance) => ({ x: pos.x + distance }),
+  S: (pos, distance) => ({ y: pos.y + distance }),
+  W: (pos, distance) => ({ x: pos.x - distance }),
 }
 
 const nextPosition = (pos, command) => {
@@ -57,14 +57,13 @@ const nextPosition = (pos, command) => {
 }
 
 const parseInput = (instruction) => {
-  const [, direction, distance ] = instruction.match(/(R|L)(\d+)/)
+  const [ , direction, distance ] = instruction.match(/(R|L)(\d+)/)
   return {
     direction,
-    distance: parseInt(distance, 10)
+    distance: parseInt(distance, 10),
   }
 }
 const getCommands = (input) => input.split(', ').map(parseInput)
-const changePos = ({ direction, distance }) => {}
 
 function part1(input) {
   const start = { x: 0, y: 0, face: 'N' }
