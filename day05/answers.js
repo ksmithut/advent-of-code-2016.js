@@ -1,15 +1,15 @@
 'use strict'
 
 exports.part1 = {
-  answer: null,
+  answer: 'f97c354d',
   examples: [
-    { input: '', value: null },
+    { input: 'abc', value: '18f47a30' },
   ],
 }
 
 exports.part2 = {
-  answer: null,
+  answer: '863dde27',
   examples: [
-    { input: '', value: null },
+    { input: 'abc', value: '05ace8e3' },
   ],
 }
