@@ -1,6 +1,7 @@
 'use strict'
 
 /**
+ * {PART1}
  */
 
 function part1(input) {
@@ -8,10 +9,12 @@ function part1(input) {
 }
 
 /**
+ * {PART2}
  */
 
 function part2(input) {
 
 }
 
-module.exports = { part1, part2 }
+// exports.part1 = part1
+// exports.part2 = part2

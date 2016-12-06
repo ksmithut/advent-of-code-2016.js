@@ -1,4 +1,4 @@
-# Advent of Code
+# advent-of-code-2016.js
 
 This is my repo for keeping track of my answers for [advent of code][advent].
 This is setup for questions to be answered using JavaScript, specifically in the
