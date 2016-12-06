@@ -1,15 +1,55 @@
 'use strict'
 
 exports.part1 = {
-  answer: null,
+  answer: 'xdkzukcf',
   examples: [
-    { input: '', value: null },
+    {
+      input: [
+        'eedadn',
+        'drvtee',
+        'eandsr',
+        'raavrd',
+        'atevrs',
+        'tsrnev',
+        'sdttsa',
+        'rasrtv',
+        'nssdts',
+        'ntnada',
+        'svetve',
+        'tesnvt',
+        'vntsnd',
+        'vrdear',
+        'dvrsen',
+        'enarar',
+      ].join('\n'),
+      value: 'easter',
+    },
   ],
 }
 
 exports.part2 = {
-  answer: null,
+  answer: 'cevsgyvd',
   examples: [
-    { input: '', value: null },
+    {
+      input: [
+        'eedadn',
+        'drvtee',
+        'eandsr',
+        'raavrd',
+        'atevrs',
+        'tsrnev',
+        'sdttsa',
+        'rasrtv',
+        'nssdts',
+        'ntnada',
+        'svetve',
+        'tesnvt',
+        'vntsnd',
+        'vrdear',
+        'dvrsen',
+        'enarar',
+      ].join('\n'),
+      value: 'advent',
+    },
   ],
 }
