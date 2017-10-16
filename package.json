@@ -5,31 +5,26 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "advent run",
-    "init": "advent init",
-    "test:lint": "eslint ."
-  },
-  "engines": {
-    "node": ">=6.0.0"
+    "test:lint": "standard"
   },
   "author": "",
   "license": "ISC",
   "eslintConfig": {
     "extends": [
-      "ksmithut",
-      "ksmithut/node",
-      "ksmithut/es6-node"
-    ]
+      "standard"
+    ],
+    "root": true
   },
   "adventConfig": {
-    "year": "2016"
+    "year": "2016",
+    "nameTemplate": "src/day{{num}}.js",
+    "templateFile": "config/template.js"
   },
   "devDependencies": {
-    "eslint": "^3.11.1",
-    "eslint-config-ksmithut": "^2.3.0"
+    "standard": "^10.0.3"
   },
   "dependencies": {
-    "advent-of-code": "^1.0.0",
+    "advent-of-code": "^3.0.1",
     "pathfinding": "^0.4.18"
   }
 }
