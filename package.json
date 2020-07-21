@@ -21,10 +21,10 @@
     "templateFile": "config/template.js"
   },
   "devDependencies": {
-    "standard": "^14.0.2"
+    "standard": "^14.3.4"
   },
   "dependencies": {
-    "advent-of-code": "^4.0.3",
+    "advent-of-code": "^5.0.0",
     "pathfinding": "^0.4.18"
   }
 }
